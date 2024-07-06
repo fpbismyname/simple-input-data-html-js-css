@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeeBoo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="flex flex-col justify-center items-center">
+      <!-- Title Web -->
+      <h1 class="weeboo">🏯WeeBoo🏯</h1>
+
+      <!-- Table Data Weeboo -->
+      <div class="flex flex-row justify-center items-center">
+        <table border="2">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Alamat</th>
+              <th>Anime Favorit</th>
+            </tr>
+          </thead>
+          <tbody id="data-table">
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- form input -->
+      <div class="formInput">
+        <span id="notifInputData">Data berhasil di input 👌</span>
+        <form
+          onsubmit="handleSubmit(event)"
+          id="loginForm"
+          method="post"
+          class="flex flex-col gap-1"
+        >
+          <h1>Input Data Weeboo</h1>
+          <input type="number" name="nomor" placeholder="No" min="0" />
+          <input type="text" name="nama" placeholder="Nama" />
+          <input type="text" name="kelas" placeholder="Kelas" />
+          <input type="text" name="alamat" placeholder="Alamat" />
+          <input type="text" name="anime_fav" placeholder="Anime favorit" />
+          <input type="submit" name="submit" value="Input" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

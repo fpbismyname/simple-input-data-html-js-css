@@ -1,0 +1,73 @@
+:root{
+    font-family: Segoe UI;
+}
+
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.gap-1 {
+  gap: 10px;
+}
+
+
+.formInput {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-size: 8pt;
+  background-color: rgb(131, 210, 255);
+  padding: 20px;
+  user-select: none;
+  border-radius: 10px;
+  input {
+    font-size: 8pt;
+    outline: none;
+    border: none;
+    padding: 5px;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  input[value="Input"] {
+    background-color: rgb(67, 158, 255);
+    cursor: pointer;
+  }
+  input[value="Input"]:hover {
+    background-color: rgb(32, 77, 125);
+  }
+}
+
+.weeboo{
+    font-family: Verdana;
+    font-weight: bold;
+    -webkit-text-fill-color: #f8312f;
+    cursor: pointer;
+    transition: text-shadow 0.2s;
+}
+.weeboo:hover{
+    text-shadow: 0px 0px 5px #f8312f;
+}
+
+#notifInputData{
+    display: none;
+    justify-content: center;
+    background-color: rgb(131, 255, 172);
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.692);
+}
