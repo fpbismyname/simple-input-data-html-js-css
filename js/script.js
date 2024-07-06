@@ -72,6 +72,7 @@ function createElement(data) {
 function notif() {
   //mengambil element notif
   let notifikasi = document.getElementById("notifInputData");
+
   //memunculkan notif terlebih dahulu
   notifikasi.style.display = "flex";
 
